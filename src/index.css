@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+body {
+  
+  background-color:rgb(248, 250, 252);
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+margin: 0;
+  padding: 0;
+ font-family: "Mozilla Headline", sans-serif;
+font-size:medium;
+   
+}
+
+@layer utilities
+{
+@keyframes blink{
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+.animate-blink {
+  animation: blink 0.5s ease infinite;
+}
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translate(250%)
+    }
+}
+.animate-loading-bar {
+  animation: loading 1s ease infinite;
+}
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
