@@ -17,7 +17,7 @@ export const Projects = () => {
              
               <RevealOnScroll>
             <div className="mx-auto px-4 max-w-5xl pt-16">
-                <h2 className="font-bold text-7xl mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center"
+                <h2 className="font-bold text-3xl sm:text-5xl md:text-7xl mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center"
                 
                 > Graphic Design Projects
                 </h2>
@@ -158,7 +158,7 @@ export const Projects = () => {
 
              
                
-<h2 className="mt-24 font-bold text-7xl mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center"
+<h2 className="font-bold text-3xl sm:text-5xl md:text-7xl mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center"
                 
                 > Frontend projects
 </h2>
