@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import imgMe from '../../assets/images/me.jpg';
 
+
 export const Home = () => {
     return (
         <section 

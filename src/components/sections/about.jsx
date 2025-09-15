@@ -12,14 +12,12 @@ export const About = () => {
                         About me
                     </h2>
 
-                    <div className="rounded hover:-translate-y-1 transition-all mb-12">
-                        <p className="mb-6 text-gray-400 text-center text-left">
-                            I'm a curious junior front-end developer and visual artist with a love for typography and a soft spot for
-                            illustrative elements. I gravitate toward web development and design that speaks a human language — clear, honest and relatable. I don’t believe in reinventing the wheel but I do belive in thinking out of the box and I’m always open to constructive feedback.
-                            My experience comes mainly from teaching visual arts (3 years) at an elementary art school, where I worked with children of various ages.  </p>  
-                        
+                    <div className="rounded hover:-translate-y-1 transition-all mb-12 ">
+                        <p className="mb-6 text-slate-50 text-lg text-italic text-justify bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg p-10 transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/30 animate-typing overflow-hidden ">
+                            From teaching kids to paint their dreams to building digital experiences that capture hearts – my journey has always been about making the complex beautifully simple. I gravitate toward web development and design that speaks a human language — clear, honest and relatable. 
+                        </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                            <div className="rounded-xl p-6 border-4 border-orange-400">
+                            <div className="rounded-xl p-6 border-4 border-orange-400 mt-10">
                                 <h3 className="text-xl text-orange-400 font-bold mb-6">
                                     Frontend
                                 </h3>
@@ -35,7 +33,7 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="rounded-xl p-6 border-4 border-orange-400">
+                            <div className="rounded-xl p-6 border-4 border-orange-400 mt-10">
                                 <h3 className="text-xl text-orange-400 font-bold mb-6">
                                     Design
                                 </h3>
@@ -127,4 +125,4 @@ export const About = () => {
             </RevealOnScroll>
         </section>
     );
-}
+};
