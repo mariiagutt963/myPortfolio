@@ -3,6 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
     const frontEndSkills = ["HTML", "CSS", "TailwindCSS", "React"];
     const designSkills = ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma"];
+    const softSkills = ["Adaptability", "Strenuousness", "Non-conflict", "Pedantry"];
 
     return (
         <section id="about" className="py-20 pt-30">
@@ -16,7 +17,7 @@ export const About = () => {
                         <p className="mb-6 text-slate-50 text-lg text-italic text-justify bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg p-10 transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/30 animate-typing overflow-hidden ">
                             From teaching kids to paint their dreams to building digital experiences that capture hearts – my journey has always been about making the complex beautifully simple. I gravitate toward web development and design that speaks a human language — clear, honest and relatable. 
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div className="rounded-xl p-6 border-4 border-orange-400 mt-10">
                                 <h3 className="text-xl text-orange-400 font-bold mb-6">
                                     Frontend
@@ -39,6 +40,22 @@ export const About = () => {
                                 </h3>
                                 <div className="flex flex-col gap-2">
                                     {designSkills.map((tech, key) => (
+                                        <span 
+                                            key={key}
+                                            className="text-gray-400 py-1 px-3 rounded-full text-md"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                             <div className="rounded-xl p-6 border-4 border-orange-400 mt-10">
+                                <h3 className="text-xl text-orange-400 font-bold mb-6">
+                                    Soft skills
+                                </h3>
+                                <div className="flex flex-col gap-2">
+                                    {softSkills.map((tech, key) => (
                                         <span 
                                             key={key}
                                             className="text-gray-400 py-1 px-3 rounded-full text-md"
