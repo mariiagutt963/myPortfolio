@@ -20,7 +20,7 @@ function App() {
   const [firstLoadDone, setFirstLoadDone] = useState(false); 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Track when first load finishes
+
   useEffect(() => {
     if (!firstLoadDone && isLoaded) {
       setFirstLoadDone(true);

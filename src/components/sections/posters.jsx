@@ -1,4 +1,5 @@
 import ImageCarousel from './imageCarousel';
+import { useEffect } from 'react';
 import img1xp from '../../assets/images/1xp.jpg';
 import img2xp from '../../assets/images/2xp.jpg';
 import imgaxp from '../../assets/images/axp.jpg';
@@ -14,13 +15,17 @@ import imgHeroInfo from '../../assets/images/info1.jpg';
 import { ChevronLeft } from 'lucide-react';
 
 export const Posters = () => {
-   
+
+   useEffect(() => {
+           window.scrollTo(0, 0);
+       }, []);
+
       const postersImages = [imgaxp, img1xp, img2xp,imgbxp];
       const posterInfograph = [info4xp,info6xp,info5xp,info3xp,info2xp]
 
        return (
        <section className="w-full">  
-        <h1 className="font-bold text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
+        <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
        Typo posters
       </h1>
       {/* hero section*/}
@@ -50,7 +55,7 @@ export const Posters = () => {
       </div>
 
       <div className="w-full ">
-         <h1 className="font-bold text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
+         <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
         Infographic poster
         </h1>
 

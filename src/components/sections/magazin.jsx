@@ -1,4 +1,5 @@
 import ImageCarousel from './imageCarousel';
+import { useEffect } from "react";
 import img1 from '../../assets/images/1x5.jpg';
 import img2 from '../../assets/images/2x5.jpg';
 import img3 from '../../assets/images/3x5.jpg';
@@ -12,12 +13,18 @@ import heroImg from '../../assets/images/6x5.jpg';
 import { ChevronLeft } from 'lucide-react';
 
 export const Magazin = () => {
+
+  useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
   const magazinImages = [img1, img2, img3, img4, img5, img7];
 
   return (
     <section className="w-full">
      
-      <h1 className="font-bold text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
+      <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
         Magazin 5
       </h1>
 

@@ -1,4 +1,5 @@
 import ImageCarousel from './imageCarousel';
+import { useEffect } from 'react';
 import imgLMR from '../../assets/images/dvoj.jpg';
 import imgLMR1 from '../../assets/images/dvoj1.jpg';
 import imgLMR2 from '../../assets/images/dvoj2.jpg';
@@ -10,6 +11,11 @@ import { ChevronLeft } from 'lucide-react';
 
 
 export const VisualIdentity = () => {
+
+  useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 const lemraImages = [imgLMR1, imgLMR2, imgLMR3, imgLMR4, imgLMR5];
 
     return (
@@ -17,7 +23,7 @@ const lemraImages = [imgLMR1, imgLMR2, imgLMR3, imgLMR4, imgLMR5];
          id="visualIdentity" 
          className="w-full">
 
-      <h1 className="font-bold text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
+      <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
       Visual Identity of Lemra
       </h1>
 
