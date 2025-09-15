@@ -12,7 +12,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
         <div className="flex justify-between items-center h-16">
             <a href="#home" className="text-xl font-medium text-orange-500">
              {" "}
-        MARIA'S <br></br>PORTFOLIO
+        PORTFOLIO
             </a>
 
             <div className="w-16 h-6 relative cursor-pointer z-40 md:hidden text-2xl text-gray-400 hover:text-orange-400 transition-colors" onClick={()=> setMenuOpen((prev)=>!prev)}>

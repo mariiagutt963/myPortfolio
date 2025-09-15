@@ -24,7 +24,7 @@ export const Kitchen = () => {
             className="w-full">
             
             {/* Title */}z
-            <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center">
+            <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl mt-14 mb-8 bg-gradient-to-r from-yellow-400 to-orange-600 bg-clip-text text-transparent text-center mt-34">
                 Kitchen studio website
             </h1>
 
